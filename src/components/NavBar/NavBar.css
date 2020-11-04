@@ -1,13 +1,4 @@
 .link {
-  padding: 10px;
-  font-size: 1em;
-  color: #632c6b;
-}
-.color-nav {
-  background-color: #c5e3d0;
-}
-
-.link:hover {
-  background-color: rgb(74, 74, 150);
-  color: whitesmoke;
+    padding: 10px;
+    font-size: 1em;
 }
