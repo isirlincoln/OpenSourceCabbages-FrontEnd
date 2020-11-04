@@ -1,6 +1,6 @@
 import React from "react";
-import { Component } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import { slideInLeft } from "react-animations";
 import { Image, Intro, H2, Container, Banner } from "../../Global";
 
 export default function About(props) {
@@ -9,10 +9,17 @@ export default function About(props) {
     margin: 20px;
   `;
 
+  const slideInLeftAnimation = keyframes`${slideInLeft}`;
+  const SlideDiv = styled.div`
+    animation: 2s ${slideInLeftAnimation};
+  `;
+
   return (
     <>
       <Banner>
-        <Intro>Meet The Cabbages!</Intro>
+        <SlideDiv>
+          <Intro>Meet The Cabbages!</Intro>
+        </SlideDiv>
       </Banner>
       <Container>
         <Bio>
@@ -37,50 +44,28 @@ export default function About(props) {
             carrot cake bonbon liquorice halvah.
           </p>
         </Bio>
-        <Bio>
-          <Image
-            src="https://i.ibb.co/kXL09SP/brain.jpg"
-            alt="Milton"
-            className="image"
-          ></Image>
-          <H2>Milton Grady</H2>
-          <p>
-            Cake lemon drops candy canes tootsie roll sugar plum cookie cake
-            cotton candy halvah. Pudding biscuit topping danish liquorice carrot
-            cake halvah. Carrot cake cake cupcake candy chocolate cookie dragée
-            marzipan cupcake. Marzipan gummies tart danish halvah topping
-            halvah. Cupcake cupcake jelly beans sweet roll powder gummi bears
-            tart chocolate bar. Carrot cake chocolate cake soufflé halvah
-            biscuit liquorice jujubes tiramisu cheesecake. Biscuit topping ice
-            cream powder liquorice cookie pie. Chupa chups ice cream liquorice
-            sweet candy oat cake chocolate cake sweet. Dessert tiramisu dragée.
-            Gingerbread muffin lollipop donut croissant tart sweet cookie. Oat
-            cake croissant croissant tiramisu tootsie roll. Carrot cake cookie
-            candy canes chocolate macaroon halvah tiramisu tiramisu. Macaroon
-            cake macaroon candy canes.
-          </p>
-        </Bio>
 
         <Bio>
           <Image
-            src="https://i.ibb.co/kXL09SP/brain.jpg"
+            src="https://i.ibb.co/q5tz22J/123677790-715174182710362-6615206298440617095-n.jpg"
             alt="Billy"
             className="image"
           ></Image>
           <H2>Billy Le</H2>
           <p>
-            Gummies pastry macaroon donut cake jelly marzipan powder. Chupa
-            chups dessert chocolate jelly muffin donut candy wafer. Cheesecake
-            carrot cake cheesecake toffee jelly-o marzipan tart. Icing marzipan
-            tootsie roll. Chocolate topping gummi bears fruitcake gummies.
-            Tootsie roll macaroon fruitcake cotton candy jujubes tart chocolate
-            bar gummies sweet. Chocolate fruitcake wafer cheesecake bonbon
-            cotton candy ice cream fruitcake powder. Liquorice candy canes
-            carrot cake. Tiramisu tootsie roll croissant topping gummi bears
-            donut oat cake tootsie roll. Cheesecake sugar plum jelly beans candy
-            canes marshmallow gummies. Caramels croissant bonbon cheesecake
-            muffin. Danish tiramisu tootsie roll. Ice cream marshmallow caramels
-            chocolate cake gummies.
+            What sets me apart than other applicants is my willingness to learn,
+            and grow from each experience. Upon seeing each experience you will
+            see the applicant utilizing a mix of each end every encounter to
+            ensure that their employers and customers are given top quality work
+            and consideration. His skill will include out of the box thinking,
+            excellent time utilization, and teamwork. Though being able to
+            approach problems and solutions on my own. Teamwork and comradarie
+            is a very important value to me. Developing more positive relations
+            with teammates and customers is one of the core parts of making a
+            more productive and safe workspace. If anything would set me apart
+            from other applicants would be my ability to become a team player as
+            well as utilizing most if not all prior experiences to ensure top
+            quality work.
           </p>
         </Bio>
 
