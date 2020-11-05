@@ -13,8 +13,8 @@ import {
   Container,
 } from '../../Global';
 import styled from 'styled-components';
-import './Product.css';
-
+//Instead of passing in the product we need to create a new 
+//object with a quanity to pass in as well.
 export default function Product(props) {
   const [products, setProducts] = useState([]);
   const [state, setState] = useState({
@@ -56,9 +56,25 @@ export default function Product(props) {
   };
 
 
-  const handleCart = (product) => {
-    state.cart.push(product);
+  const handleCart = (product, quanity) => {
+
+    const newCart = [product, quanity];
+    const check = false;
+    for( let i in state.cart){
+      for(let x in product){
+        if(state.cart[i] == product[x]){
+          quanity++;
+          localStorage.setItem('cart') == null;
+          state.cart.push(newCart);
+          check = true;
+        }
+      }
+    }
+    if(!check){
+    state.cart.push(product,quanity);
     localStorage.setItem('cart', state.cart);
+    }
+    
   };
 
   const Stock = styled.section`
@@ -88,7 +104,7 @@ export default function Product(props) {
             <Description>{product.description}</Description>
             <Price>Price: {'$' + product.price}</Price>
             <Stock>{product.inventory} in Stock </Stock>
-            <button onClick={() => handleCart(product.productId)}>
+            <button onClick={() => handleCart(product.productId,1)}>
               Add to cart
             </button>
             <ProductName>{product.productName}</ProductName>
@@ -97,5 +113,4 @@ export default function Product(props) {
       </Container>
     </>
   );
-  }
 }

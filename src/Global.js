@@ -137,3 +137,7 @@ export const Section = styled.section`
 export const Container = styled.div`
   margin-top: 140px;
 `;
+export const Quanity = styled.p`
+  padding: 5px;
+  display:block;
+`

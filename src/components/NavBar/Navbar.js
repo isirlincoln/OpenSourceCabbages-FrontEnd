@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Nav, Navbar } from 'react-bootstrap';
-import './NavBar.css';
 import logo from '../../Logo/Logo.png';
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 import { DarkButton } from '../../Global';

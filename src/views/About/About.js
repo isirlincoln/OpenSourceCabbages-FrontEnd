@@ -24,25 +24,44 @@ export default function About(props) {
       <Container>
         <Bio>
           <Image
-            src="https://i.ibb.co/kXL09SP/brain.jpg"
+            src="https://media-exp1.licdn.com/dms/image/C5603AQGUUNONrFZOlQ/profile-displayphoto-shrink_200_200/0?e=1609977600&v=beta&t=T1pTDKpijvePZIkTqRY3gjOG5AtbZoT6HChpiqPdQdw"
             alt="Lincoln"
             className="image"
           ></Image>
-          <H2>Lincoln Gage</H2>
-          <p>
-            Chupa chups macaroon sesame snaps sweet carrot cake brownie. Cotton
-            candy powder tart gummies fruitcake halvah danish. Sweet roll
-            topping gummies dessert dessert gummi bears gummi bears sugar plum.
-            Carrot cake sugar plum soufflé cake brownie pie cake. Chocolate
-            liquorice chocolate. Cotton candy cake tootsie roll jujubes pastry
-            icing danish. Cake gummi bears wafer candy jelly carrot cake jelly
-            beans. Powder jelly pastry. Powder carrot cake donut pie donut.
-            Icing caramels chocolate cake gummies sweet roll candy jujubes
-            croissant. Marshmallow croissant bonbon sesame snaps dragée wafer
-            dragée. Jujubes croissant danish. Pastry jujubes carrot cake sweet
-            dragée tiramisu bear claw. Brownie wafer cake sweet roll danish
-            carrot cake bonbon liquorice halvah.
-          </p>
+          <H2>Lincoln Thomas Gage</H2>
+            <p>
+            A highly qualified technician with over five years of experience in computer systems, who can adapt to different situations as needed and decide what action to take with dependability and great judgement. 
+            Possessing skills that allow me to lead a team to accomplish the goals required and to delegate in order to achieve our tasks in a timely manner. 
+            Quick to learn new systems and techniques in order to troubleshoot or create systems needed to improve current operations.
+            Worked previously with systems such as Cisco, DISA and familiar with their equipment.
+            </p>
+            <p>
+            Skills<br/>
+            Troubleshooting systems | Create Infrastructure | Program switches/servers | Repair electronics | Floor Equipment Manager 
+            Review script and coding | Server Operation | Server Troubleshooting | Maintained Private server | Python | Azure | C# | Java | ASP.Net Core/Framework
+            SQL | React | HTML | Maven | CSS | JavaScript | Sign Language
+            </p>
+            <p>
+              Experience<br/>
+                Woz-U Online Coding School<br/>
+	                September 2020 – November 2020
+                  Class that taught me Java, Css, JavaScript, HTML, NoSQL, Maven, React, and furthered my understanding of SQL. 
+            </p>
+            <p>
+	              Microsoft Software and Systems Academy Course<br/>
+	                July 2020 – November 2020<br/>
+                  Class that taught me C#, Azure, SQL, and ASP.NET over the course of five months. Creating, troubleshooting and understanding programming systems. 
+            </p>
+            <p>
+                Telephone and Personal Computer Repairman • United States Marine Corps<br/>
+                  2018 – July 2020<br/>
+                  Created and instructed co-workers on a new troubleshooting method for Uninterruptible Power Supplies, saving the Marine Corps a countless amount of money in replacement costs.
+            </p>
+            <p> 
+                Technician Controller • United States Marine Corps<br/>
+                  2016 – 2018<br/>
+                  Identified and installed new infrastructure to initialize an effective security measure, implementing identification scanning systems encompassing eight diverse Department of Defense installations on Okinawa, Japan.
+            </p>
         </Bio>
 
         <Bio>

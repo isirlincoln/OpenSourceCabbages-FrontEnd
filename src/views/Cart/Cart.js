@@ -12,6 +12,7 @@ import {
   Price,
   ProductName,
   Container,
+  Quanity
 } from '../../Global';
 
 export default function Product(props) {
@@ -57,12 +58,13 @@ export default function Product(props) {
       ? (result = <Title>Cart is Empty</Title>)
       : (result = (
           <span>
-            {products.map((product, index) => (
+            {products.map((product, quanity, index) => (
               <EachProduct key={index}>
                 <Image src={product.imageUrl} />
                 <Description>{product.description}</Description>
                 <Price>Price: {'$' + product.price}</Price>
                 <Stock>{product.inventory} in Stock </Stock>
+                <Quanity>Quanity:{quanity}</Quanity>
                 <button onClick={() => handleRemoveCart(product.productId)}>
                   Remove from cart
                 </button>

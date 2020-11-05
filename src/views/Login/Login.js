@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Title, H3, DarkButton, Form, Section, Container } from "../../Global";
 import AuthService from "./AuthService";
-import "./Login.css";
 
 export default function Login(props) {
   const [state, setState] = useState({
